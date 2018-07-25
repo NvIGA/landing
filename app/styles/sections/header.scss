@@ -20,10 +20,13 @@
     padding: 10px 10px 8px;
     color: #424242;
     transition: 0.3s;
+    text-decoration: none;
+
 
     &:hover{
         color: lighten(#424242, 20%);
     }
+
     &:first-child{
         margin-right: 7px;
         padding-right: 18px;
