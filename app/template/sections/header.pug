@@ -1,0 +1,17 @@
+- var links = ['Home', 'Contacts', 'About']
+- var links1 = ['Home1', 'Contacts1', 'About1', '1']
+mixin list(items, className)
+    ul(class=className)
+        each link in items
+            li(class=className + '__item')
+                a(class=className + '__link')=link
++list(links, 'list')
++list(links1, 'menu')
+//
+    select.list
+            each link in links
+                option.list__item=link
+        select.list
+            each link in links1
+                option.list__item=link
+        include sections/header
