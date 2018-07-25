@@ -1,0 +1,31 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "* Chek your version node\r > node -v\r * Chek your version npm\r > npm install\r * Must be install gulp 4 version\r > npm install gulpjs/gulp-cli#4.0 -g",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NvIGA/landing.git"
+  },
+  "author": "Volodimir Taratunskyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NvIGA/landing/issues"
+  },
+  "homepage": "https://github.com/NvIGA/landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp.spritesmith": "^6.9.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}

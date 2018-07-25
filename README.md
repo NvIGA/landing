@@ -7,7 +7,7 @@
 * Chek your version npm
 > npm install
 * Must be install gulp 4 version
-> npm install gulpjs/gulp-cli#4.0 -g
+> npm install gulpjs/gulp#4.0 --save-dev
 
 ## To start project you need: 
 
