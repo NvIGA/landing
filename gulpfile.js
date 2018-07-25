@@ -18,9 +18,6 @@ gulp.task('browser-sync', () => {
     });
 });
 
-gulp.task('watch', ()=>{
-
-});
 
 /* ------------Pug compile------------ */
 gulp.task('views',  function buildHTML () {
@@ -56,6 +53,13 @@ gulp.task('sprite', (cb) => {
   
 });
 
+/* ------------Font-awesome------------ */
+
+gulp.task('fonts', () => {
+    return gulp.src('node_modules/font-awesome/fonts/*')
+        .pipe(gulp.dest('build/fonts'));
+});
+
 /* ------------Delete------------ */
 gulp.task('clean', del = (cb) => {
     return rimraf('build', cb) 
@@ -74,7 +78,7 @@ gulp.task('copy:images', () => {
 });
 
 /* ------------Copy------------ */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'fonts'));
 
 /* ------------Watch the changes------------ */
 gulp.task('watch', () => {

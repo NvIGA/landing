@@ -4,7 +4,8 @@
   "description": "* Chek your version node\r > node -v\r * Chek your version npm\r > npm install\r * Must be install gulp 4 version\r > npm install gulpjs/gulp-cli#4.0 -g",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "gulp.spritesmith": "^6.9.0"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0",
     "rimraf": "^2.6.2"
   }
 }
