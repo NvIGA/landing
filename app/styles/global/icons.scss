@@ -13,3 +13,7 @@
 .icon-message{
     @include sprite($message);
 }
+
+.work-item{
+    @include sprite($work-item);
+}

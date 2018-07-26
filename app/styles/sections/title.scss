@@ -13,6 +13,7 @@
         font-size: 1.25rem;
         font-family: $ff-light;
     }
+
     &--with-bottom-line{
         position: relative;
 
@@ -24,6 +25,9 @@
             width: 47px;
             height: 5px;
             background: #424242;
+            border-radius: 5px;
         }
     }
+
+  
 }
