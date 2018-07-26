@@ -1,0 +1,17 @@
+- const linkItems = {"facebook.com": "fa-facebook", "twitter.com": "fa-twitter", "google.com": "fa-google-plus", "linkedin.com": "fa-linkedin"}
+footer.footer
+    .footer__top
+        .container
+            .footer__title Get in touch
+
+            .footer__links
+                each a, b in linkItems
+                    a.footer__social(href="http://"+ b target="_blank")
+                        i(class="fa "+ a aria-hidden="true")
+
+            .footer__text Subscribe to our newletter to stay update with what is new
+            form(action="#" method="post")
+                .footer__field: input.footer__input(type="email" placeholder="Email Address")
+                button(type="submit").button Subscribe
+    .footer__bottom
+        .footer__copy All Rights Reserved

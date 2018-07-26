@@ -1,0 +1,21 @@
+section.form-section
+    .container
+        .title
+            h2.title.title__header Get Your Free Facebook Analysis Now
+            .title__text Enter your details below
+
+    .btn-down: a.arrow-down: i.fa.fa-check-circle-o(aria-hidden="true") 
+
+    .form-container.is-hidden
+        form(method="post" action="#").form
+            button(type="button").form__close-button x
+            .form__text.
+                Lorem, ipsum dolor elit. Voluptatibus, aspernatur voluptates porro minima.
+                Aperiam deserunt  debitis veniam aliquam ea cumque ex.
+            
+            .form__fields
+                - const placeholder_items = ["Your Name", "Contact Number", "Contact Name"]
+                    for s  in placeholder_items
+                        input.form__input(type="text" placeholder=s)
+
+            button(type="submit").button.button--uppercase.button--red Submit now              
