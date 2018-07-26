@@ -3,55 +3,36 @@
         background-color: #f0f2f4;
         border-bottom: 1px solid #e2e2e2; 
     }
+
     &__bottom{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
         padding: 41px 0 32px;
-    }
-}
-.contacts{
-    text-align: right;
-} 
-.contact{
-    display: inline-block;
-    vertical-align: top;
-    padding: 10px 10px 8px;
-    color: #424242;
-    transition: 0.3s;
-    text-decoration: none;
 
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
 
-    &:hover{
-        color: lighten(#424242, 20%);
     }
 
-    &:first-child{
-        margin-right: 7px;
-        padding-right: 18px;
-        border-right: 1px solid #e2e2e2;
-    }
-    &__icon{
-        margin-right: 7px;
-        vertical-align: middle;
-        font-size: 1.5rem;
-
-        &--email{
-            font-size: 1.2rem
+    .button{
+        @media (max-width: 1080px){
+            margin-right: 15px;
+        }
+        @media (max-width: 1000px) {
+            margin-right: 0px;
         }
     }
-}
 
-.facebook-icon{
-    display: inline-block;
-    text-align: center;
-    margin: 7px 0;
-    padding: 4px 7px 1px 7px;
-    border-radius: 3px;
-    background-color: #1287bf;
-    color: #fff;
-    &__element{
-        font-size: 1rem
-    }
+    .logo{
+        @media (max-width: 1080px){
+            margin-left: 15px;
+        }
+        @media (max-width: 1000px) {
+            margin-left: 0;
+            margin-bottom: 15px;
+        }
+    } 
 }

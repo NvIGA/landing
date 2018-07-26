@@ -3,6 +3,11 @@
     padding-top: 7px;
     vertical-align: top;
     margin-right: 15px;
+    
+    @media (max-width: 1000px) {
+        margin-bottom: 25px;
+        margin-right: 0px; 
+    }
 
     &__link{
         display: inline-block;

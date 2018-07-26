@@ -37,6 +37,10 @@
     text-align: center;
     background: #fff;
 
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
+
     &-container{
         padding-top: 30px;
     }
@@ -86,13 +90,17 @@
     }
 
     &__input{
-        width: 66%;
+        width: 70%;
         display: block;
         margin: auto auto 8px auto;
         padding: 18px 20px;
         border: 1px solid #d8d8d8;
         border-radius: 3px;
         font-size: 0.875rem;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+        }
 
         &:focus{
             outline: none;

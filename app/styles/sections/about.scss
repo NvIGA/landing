@@ -2,16 +2,42 @@
     padding: 99px 0px 105px 0px;
     text-align: center;
 
+    @media (max-width: 1000px) {
+        padding: 36px 0;
+    }
+
     &__list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        flex: wrap;
         margin: 0;
         padding: 0 50px; 
+
+        @media (max-width: 1000px) {
+            justify-content: center;
+        }
     }
 
     &__item{
         width: 30%;
+
+        @media (max-width: 1000px) {
+            width: 50%;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+ 
+        } 
+
+        @media (max-width: 668px) {
+            width: 90%;
+            justify-content: center;
+            margin-bottom: 5px;
+            padding: 0px;
+            box-sizing: border-box;
+ 
+        }
     }
 
     &__header{
