@@ -1,7 +1,7 @@
 nav.nav
-    - const items = {"Home": "#1", "About us": "#2", "Our Approch": "#3", "Our Work": "#3"}
-        for s, n  in items
-            if n === "Home"
-                a.nav__link.nav__link--active(href=s)= n
+    - const items = {"header": "Home", "about": "About us", "approch":  "Our Approch", "work": "Our Work"};
+        for s, key in items
+            if s === "Home"
+                a.nav__link.nav__link--active(href="#" data-link=key )= s
             else
-                a.nav__link(href=s)= n 
+                a.nav__link(href="#" data-link=key)= s 

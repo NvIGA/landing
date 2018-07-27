@@ -4,7 +4,7 @@ section.form-section
             h2.title.title__header Get Your Free Facebook Analysis Now
             .title__text Enter your details below
 
-    .btn-down: a.arrow-down: i.fa.fa-check-circle-o(aria-hidden="true") 
+    .btn-down: a.arrow-down(href="form.html" target="_blank"): i.fa.fa-check-circle-o(aria-hidden="true") 
 
     .form-container.is-hidden
         form(method="post" action="#").form
@@ -14,8 +14,8 @@ section.form-section
                 Aperiam deserunt  debitis veniam aliquam ea cumque ex.
             
             .form__fields
-                - const placeholder_items = ["Your Name", "Contact Number", "Contact Name"]
-                    for s  in placeholder_items
-                        input.form__input(type="text" placeholder=s)
+                - const placeholder_items = { "Your Name": "text","Your Email": "email", "Contact Number":  "tel"}
+                    for s, n  in placeholder_items
+                        input.form__input(type=s placeholder=n data-valid="required")
 
             button(type="submit").button.button--uppercase.button--red Submit now              
